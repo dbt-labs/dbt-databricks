@@ -42,6 +42,7 @@ class DatabricksRelationType(StrEnum):
     StreamingTable = "streaming_table"
     MetricView = "metric_view"
     Unknown = "unknown"
+    Function = "function"
 
     def render(self) -> str:
         """Return the type formatted for SQL statements (replace underscores with spaces)"""
